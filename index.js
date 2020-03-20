@@ -144,11 +144,11 @@ async function g2(u, p) {
     }
 }
 function half(a, cid, t) {
-    let p = a.Points.split(' ')[0];
+    let p = a.Points.split(' ')[1];
     send(t + ':\nNew Ungraded Assignment: ' + a.Measure + ' added to gradebook with ' + p + ' points.', cid);
 };
 function full(a, cid, t) {
-    let p = a.Points.split(' ')[0];
+    let p = a.Points.split(' ')[1];
     send(t + ':\n' + a.Measure + ' has been graded and the score added to gradebook (out of ' + p + ' points).', cid);
 };
 
